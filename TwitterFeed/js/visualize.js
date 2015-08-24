@@ -139,6 +139,11 @@ var a = performance.now();
                             category:"India",
                             keywords:["India","country","indian"],
                             color:"black" 
+                        },
+                        {
+                            category:"others",
+                            keywords:[],
+                            color:"aqua"
                         }
     ];
     twitterData.prototype.render=function forceLayout(){
