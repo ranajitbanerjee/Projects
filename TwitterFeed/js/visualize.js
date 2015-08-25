@@ -181,10 +181,12 @@ var a = performance.now();
                     clearInterval(timer);
                     return;
                 }
+
                 nodes.push(data[count]);
-                force.start();
+                
 
                 node=node.data(nodes);
+                force.start();
                 date.text(data[count].created_at.replace(/[+](0000)/g," "));
                 node.enter()
                     .append("circle")
@@ -196,7 +198,7 @@ var a = performance.now();
                     })
                     .append("svg:title")
                     .text(function(d) { return d.text; });
-
+                  
                 
                 count++;
 
