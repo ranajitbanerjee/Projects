@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                        }
                      },
                 jshint: {
-                    myFiles: ['TwitterFeed/js/visualize.js']
+                    myFiles: ['TwitterFeed/**/*.js']
                 }
        });
        grunt.loadNpmTasks('grunt-contrib-jasmine');
